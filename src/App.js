@@ -29,9 +29,9 @@ function Sidebar() {
 					<li className="nav-item"><a className="nav-link js-scroll-trigger" href="#activities">Activities</a></li>
 					<li className="nav-item"><a className="nav-link js-scroll-trigger" href="#publications">Publications</a>
 					</li>
-					<li className="nav-item"><a className="nav-link js-scroll-trigger" href="#abstracts">Abstracts</a></li>
+					{/*<li className="nav-item"><a className="nav-link js-scroll-trigger" href="#abstracts">Abstracts</a></li>*/}
 					<li className="nav-item"><a className="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-					<li className="nav-item"><a className="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+					{/*<li className="nav-item"><a className="nav-link js-scroll-trigger" href="#interests">Interests</a></li>*/}
 				</ul>
 			</div>
 		</nav>
@@ -194,6 +194,24 @@ function PublicationsPage() {
 
 }
 
+function SkillsPage() {
+	const skills_icons_list = ["fab fa-python", "fab fa-r-project", "fab fa-cloudflare", "fab fa-docker", "fab fa-git", "fab fa-js-square", "fab fa-linux", "fab fa-raspberry-pi"]
+
+	return (
+		<section className="resume-section" id="skills">
+			<div className="resume-section-content">
+				<h2 className="mb-5">Skills</h2>
+				<div className="subheading mb-3">Programming Languages & Tools</div>
+				<ul className="list-inline dev-icons">
+					{skills_icons_list.map((icon_text) => <li className="list-inline-item"><em className={icon_text}/></li>)}
+
+				</ul>
+
+			</div>
+		</section>
+	)
+}
+
 class App extends React.Component {
 	render() {
 		return (
@@ -209,6 +227,8 @@ class App extends React.Component {
 					<ActivitiesPage/>
 					<hr className="m-0"/>
 					<PublicationsPage/>
+					<hr className="m-0"/>
+					<SkillsPage/>
 					<hr className="m-0"/>
 				</div>
 			</div>
