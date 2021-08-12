@@ -10894,7 +10894,7 @@ p.lead {
   font-size: 1.5rem;
 }
 
-.authors {
+.author, .authors {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 200;
@@ -10905,7 +10905,7 @@ p.lead {
 
 .myname {
   display:inline;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .myname:hover{
