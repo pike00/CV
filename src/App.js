@@ -1,6 +1,4 @@
 import './App.css';
-
-// import about_data from './cv/about.json'
 import education from './cv/education.json'
 import awards from './cv/awards.json'
 import activities from './cv/activities.json'
@@ -15,7 +13,6 @@ function Sidebar() {
 				<span className="d-block d-lg-none">Will Pike</span>
 				<span className="d-none d-lg-block"><img className="img-fluid img-profile rounded-circle mx-auto mb-2"
 				                                         loading="lazy"
-				                                         // src="assets/img/profile_min.webp" alt="..."/></span>
 				                                         src="assets/img/profile_min.webp" alt="..."/></span>
 			</a>
 			<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -42,7 +39,7 @@ function Sidebar() {
 
 function AboutPage() {
 	function handleClick() {
-		window.open('https://mailhide.io/e/0fKuB2Zz', 'mailhidepopup', 'width=580,height=635');
+		const popup = window.open('https://mailhide.io/e/0fKuB2Zz', 'mailhidepopup', 'width=580,height=635');
 		return false;
 	}
 
@@ -144,7 +141,7 @@ function ActivitiesPage() {
 
 function PublicationsPage() {
 
-	const publicationsEntries = publications.map((publicationRow, publicationIndex) => {
+	const publicationsEntries = publications.map((publicationRow, index) => {
 			publicationRow['pubmedLink'] = "https://pubmed.ncbi.nlm.nih.gov/" + publicationRow['pmid']
 			publicationRow['doiLink'] = "https://doi.org/" + publicationRow['doi']
 			// Generates author list with bolded name
@@ -204,7 +201,7 @@ function SkillsPage() {
 				<h2 className="mb-5">Skills</h2>
 				<div className="subheading mb-3">Programming Languages & Tools</div>
 				<ul className="list-inline dev-icons">
-					{skills_icons_list.map((icon_text) => <li className="list-inline-item" key={icon_text}><em className={icon_text}/></li>)}
+					{skills_icons_list.map((icon_text) => <li className="list-inline-item"><em className={icon_text}/></li>)}
 
 				</ul>
 
