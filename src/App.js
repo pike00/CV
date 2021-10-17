@@ -51,9 +51,8 @@ function AboutPage() {
 					<span className="text-primary">Pike</span>
 				</h1>
 				<div className="subheading mb-5">
-					4435 P Street Northwest, Washington, DC 20007 ·
-					<a href="https://mailhide.io/e/0fKuB2Zz"
-					   onClick={handleClick}>w.......@gmail.com</a>
+					4435 P Street Northwest, Washington, DC 20007 · <a href="mailto:willpike00@gmail.com">willpike00@gmail.com</a>
+
 
 				</div>
 				<p className="lead mb-5">I am a fourth year medical student entering the field of Emergency Medicine. I also
@@ -166,6 +165,8 @@ function PublicationsPage() {
 						   style={{marginRight: "5px"}}>
 							<img src="./assets/img/file_download.svg"/>
 						</a>
+
+						{/*To generate badges for pmid, run ./badges/generate_badge.py*/}
 						<a href={publicationRow['pubmedLink']} style={{marginRight: "5px"}}>
 							<img src={publicationRow['pmid_icon']}/></a>
 						<a href={publicationRow['doiLink']} style={{marginRight: "5px"}}>
