@@ -165,6 +165,8 @@ function PublicationsPage() {
 						   style={{marginRight: "5px"}}>
 							<img src="./assets/img/file_download.svg"/>
 						</a>
+
+						{/*To generate badges for pmid, run ./badges/generate_badge.py*/}
 						<a href={publicationRow['pubmedLink']} style={{marginRight: "5px"}}>
 							<img src={publicationRow['pmid_icon']}/></a>
 						<a href={publicationRow['doiLink']} style={{marginRight: "5px"}}>
