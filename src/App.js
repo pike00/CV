@@ -51,12 +51,12 @@ function AboutPage() {
 					<span className="text-primary">Pike</span>
 				</h1>
 				<div className="subheading mb-5">
-					4435 P Street Northwest, Washington, DC 20007 ·
-					<a href="https://mailhide.io/e/0fKuB2Zz"
-					   onClick={handleClick}>w.......@gmail.com</a>
+					Baltimore, MD ·
+					<a href="https://mailhide.io/e/dJLnPklt"
+					   onClick={handleClick}>w.......@pikemd.com</a>
 
 				</div>
-				<p className="lead mb-5">I am a fourth year medical student entering the field of Emergency Medicine. I also
+				<p className="lead mb-5">I am a resident physician in Emergency Medicine at Johns Hopkins Health System. I also
 					have interests with data science and computers, and hope to incorporate my data science skillset to
 					improve patient outcomes.</p>
 
