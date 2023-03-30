@@ -10,3 +10,6 @@
 /httpRequests/
 node_modules/
 /build/
+
+
+badges/*.svg
